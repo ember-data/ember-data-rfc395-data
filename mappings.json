@@ -1,0 +1,26 @@
+[
+  {
+    "global": "DS.Model",
+    "module": "@ember-data/model",
+    "export": "default",
+    "deprecated": false
+  },
+  {
+    "global": "DS.attr",
+    "module": "@ember-data/attr",
+    "export": "attr",
+    "deprecated": false
+  },
+  {
+    "global": "DS.belongsTo",
+    "module": "@ember-data/model",
+    "export": "belongsTo",
+    "deprecated": false
+  },
+  {
+    "global": "DS.hasMany",
+    "module": "@ember-data/model",
+    "export": "hasMany",
+    "deprecated": false
+  }
+]
