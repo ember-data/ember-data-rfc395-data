@@ -7,7 +7,24 @@
     "url": "https://github.com/ember-data/ember-data-rfc395-data/issues"
   },
   "main": "mappings.json",
-  "repository": "git+htps://github.com/ember-data/ember-data-rfc395-data.git",
+  "repository": {
+    "url": "git+htps://github.com/ember-data/ember-data-rfc395-data.git"
+  },
   "author": "Cyrille David <dcyriller@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint .",
+    "changelog": "lerna-changelog",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "eslint": "^5.15.3",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-plugin-jest": "^22.4.1",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-prettier": "^3.0.1",
+    "jest": "^24.5.0",
+    "lerna-changelog": "^0.8.2",
+    "prettier": "^1.16.4"
+  }
 }
