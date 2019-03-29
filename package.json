@@ -1,0 +1,13 @@
+{
+  "name": "ember-data-rfc395-data",
+  "version": "0.0.0",
+  "description": "JSON data for Ember.js RFC #395",
+  "homepage": "https://github.com/ember-data/ember-data-rfc395-data#readme",
+  "bugs": {
+    "url": "https://github.com/ember-data/ember-data-rfc395-data/issues"
+  },
+  "main": "mappings.json",
+  "repository": "git+htps://github.com/ember-data/ember-data-rfc395-data.git",
+  "author": "Cyrille David <dcyriller@gmail.com>",
+  "license": "MIT"
+}
