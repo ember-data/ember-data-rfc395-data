@@ -3,11 +3,12 @@
     "global": "DS.Model",
     "module": "@ember-data/model",
     "export": "default",
+    "localName": "Model",
     "deprecated": false
   },
   {
     "global": "DS.attr",
-    "module": "@ember-data/attr",
+    "module": "@ember-data/model",
     "export": "attr",
     "deprecated": false
   },
@@ -22,5 +23,45 @@
     "module": "@ember-data/model",
     "export": "hasMany",
     "deprecated": false
+  },
+  {
+    "global": "DS.Model",
+    "module": "ember-data/model",
+    "export": "default",
+    "deprecated": true,
+    "replacement": {
+      "module": "@ember-data/model",
+      "export": "default"
+    }
+  },
+  {
+    "global": "DS.attr",
+    "module": "ember-data/attr",
+    "export": "attr",
+    "deprecated": true,
+    "replacement": {
+      "module": "@ember-data/Model",
+      "export": "attr"
+    }
+  },
+  {
+    "global": "DS.belongsTo",
+    "module": "ember-data/relationships",
+    "export": "belongsTo",
+    "deprecated": true,
+    "replacement": {
+      "module": "@ember-data/Model",
+      "export": "belongsTo"
+    }
+  },
+  {
+    "global": "DS.hasMany",
+    "module": "ember-data/relationships",
+    "export": "hasMany",
+    "deprecated": true,
+    "replacement": {
+      "module": "@ember-data/Model",
+      "export": "hasMany"
+    }
   }
 ]
