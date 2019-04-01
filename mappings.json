@@ -25,6 +25,19 @@
     "deprecated": false
   },
   {
+    "global": "DS.Store",
+    "module": "@ember-data/store",
+    "export": "default",
+    "localName": "Store",
+    "deprecated": false
+  },
+  {
+    "global": "DS.normalizeModelName",
+    "module": "@ember-data/store",
+    "export": "normalizeModelName",
+    "deprecated": false
+  },
+  {
     "global": "DS.Serializer",
     "module": "@ember-data/serializer",
     "export": "default",
@@ -197,6 +210,16 @@
     "replacement": {
       "module": "@ember-data/Model",
       "export": "hasMany"
+    }
+  },
+  {
+    "global": "DS.Store",
+    "module": "ember-data/store",
+    "export": "default",
+    "deprecated": true,
+    "replacement": {
+      "module": "@ember-data/store",
+      "export": "default"
     }
   },
   {

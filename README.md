@@ -32,11 +32,13 @@ JSON data for [RFC #395](https://github.com/emberjs/rfcs/blob/master/text/0395-e
 | `DS.JSONAPISerializer`    | `import JSONAPISerializer from '@ember-data/serializer/json-api';`    |
 | `DS.JSONSerializer`       | `import JSONSerializer from '@ember-data/serializer/json';`           |
 | `DS.Model`                | `import Model from '@ember-data/model';`                              |
+| `DS.normalizeModelName`   | `import { normalizeModelName } from '@ember-data/store';`             |
 | `DS.NotFoundError`        | `import { NotFoundError } from '@ember-data/adapter/error';`          |
 | `DS.RESTAdapter`          | `import RESTAdapter from '@ember-data/adapter/rest';`                 |
 | `DS.RESTSerializer`       | `import RESTSerializer from '@ember-data/serializer/rest';`           |
 | `DS.Serializer`           | `import Serializer from '@ember-data/serializer';`                    |
 | `DS.ServerError`          | `import { ServerError } from '@ember-data/adapter/error';`            |
+| `DS.Store`                | `import Store from '@ember-data/store';`                              |
 | `DS.TimeoutError`         | `import { TimeoutError } from '@ember-data/adapter/error';`           |
 | `DS.Transform`            | `import Transform from '@ember-data/serializer/transform';`           |
 | `DS.UnauthorizedError`    | `import { UnauthorizedError } from '@ember-data/adapter/error';`      |
@@ -80,6 +82,12 @@ JSON data for [RFC #395](https://github.com/emberjs/rfcs/blob/master/text/0395-e
 | `import RESTSerializer from '@ember-data/serializer/rest';`           | `DS.RESTSerializer`       |
 | `import { EmbeddedRecordsMixin } from '@ember-data/serializer/rest';` | `DS.EmbeddedRecordsMixin` |
 | `import Transform from '@ember-data/serializer/transform';`           | `DS.Transform`            |
+
+#### `@ember-data/store`
+| Module                                                    | Global                  |
+| ---                                                       | ---                     |
+| `import Store from '@ember-data/store';`                  | `DS.Store`              |
+| `import { normalizeModelName } from '@ember-data/store';` | `DS.normalizeModelName` |
 
 
 ### Scripts
