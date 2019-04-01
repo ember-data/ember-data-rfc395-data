@@ -1,0 +1,7 @@
+language: node_js
+node_js:
+  - 'node' # latest stable
+
+script:
+  - yarn lint
+  - yarn test

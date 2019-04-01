@@ -1,3 +1,5 @@
+'use strict';
+
 const mappings = require('../mappings.json');
 
 for (let mapping of mappings) {

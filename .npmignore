@@ -1,0 +1,11 @@
+/scripts
+/tests
+
+# misc
+/.editorconfig
+/.eslintignore
+/.eslintrc.js
+/.gitignore
+/.travis.yml
+/yarn.lock 
+.gitkeep
