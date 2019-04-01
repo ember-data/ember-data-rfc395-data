@@ -11,41 +11,24 @@ JSON data for [RFC #395](https://github.com/emberjs/rfcs/blob/master/text/0395-e
 
 ## Contents
 
-### Globals to New Modules
+### Globals to New Modules 
 
-| Before                                                | After                                                          |
-| ---                                                   | ---                                                            |
-| `DS.Model`                                            | `import Model from '@ember-data/model';`                       |
-| `DS.attr`                                             | `import { attr } from '@ember-data/model';`                    |
-| `DS.belongsTo`                                        | `import { belongsTo } from '@ember-data/model';`               |
-| `DS.hasMany`                                          | `import { hasMany } from '@ember-data/model';`                 |
-
-### Modules to New Modules
-
-| Before                                                | After                                                          |
-| ---                                                   | ---                                                            |
-| `import Model from 'ember-data/model';`               | `import Model from '@ember-data/model';`                       |
-| `import attr from 'ember-data/attr';`                 | `import { attr } from '@ember-data/model';`                    |
-| `DS.belongsTo`                                        | `import { belongsTo } from '@ember-data/model';`               |
-| `DS.hasMany`                                          | `import { hasMany } from '@ember-data/model';`                 |
+| Before         | After                                            |
+| ---            | ---                                              |
+| `DS.attr`      | `import { attr } from '@ember-data/model';`      |
+| `DS.belongsTo` | `import { belongsTo } from '@ember-data/model';` |
+| `DS.hasMany`   | `import { hasMany } from '@ember-data/model';`   |
+| `DS.Model`     | `import Model from '@ember-data/model';`         |
 
 ### New Modules to Globals
 
-| Before                                                | After                                                          |
-| ---                                                   | ---                                                            |
-| `import Model from '@ember-data/model';`              | `DS.Model`                                                     |
-| `import { attr } from '@ember-data/model';`           | `DS.attr`                                                      |
-| `import { belongsTo } from '@ember-data/model';`      | `DS.belongsTo`                                                 |
-| `import { hasMany } from '@ember-data/model';`        | `DS.hasMany`                                                   |
-
-### New Modules to Modules
-
-| Before                                                | After                                                          |
-| ---                                                   | ---                                                            |
-| `import Model from '@ember-data/model';`              | `import Model from 'ember-data/model';`                        |
-| `import { attr } from '@ember-data/model';`           | `import attr from 'ember-data/attr';`                          |
-| `import { belongsTo } from '@ember-data/model';`      | `DS.belongsTo`                                                 |
-| `import { hasMany } from '@ember-data/model';`        | `DS.hasMany`                                                   |
+#### `@ember-data/model`
+| Module                                           | Global         |
+| ---                                              | ---            |
+| `import Model from '@ember-data/model';`         | `DS.Model`     |
+| `import { attr } from '@ember-data/model';`      | `DS.attr`      |
+| `import { belongsTo } from '@ember-data/model';` | `DS.belongsTo` |
+| `import { hasMany } from '@ember-data/model';`   | `DS.hasMany`   |
 
 
 ### Scripts
