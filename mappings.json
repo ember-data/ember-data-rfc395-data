@@ -25,6 +25,100 @@
     "deprecated": false
   },
   {
+    "global": "DS.Adapter",
+    "module": "@ember-data/adapter",
+    "export": "default",
+    "localName": "Adapter",
+    "deprecated": false
+  },
+  {
+    "global": "DS.RESTAdapter",
+    "module": "@ember-data/adapter/rest",
+    "export": "default",
+    "localName": "RESTAdapter",
+    "deprecated": false
+  },
+  {
+    "global": "DS.JSONAPIAdapter",
+    "module": "@ember-data/adapter/json-api",
+    "export": "default",
+    "localName": "JSONAPIAdapter",
+    "deprecated": false
+  },
+  {
+    "global": "DS.BuildURLMixin",
+    "module": "@ember-data/adapter",
+    "export": "BuildURLMixin",
+    "deprecated": false
+  },
+  {
+    "global": "DS.AdapterError",
+    "module": "@ember-data/adapter/error",
+    "export": "default",
+    "localName": "AdapterError",
+    "deprecated": false
+  },
+  {
+    "global": "DS.InvalidError",
+    "module": "@ember-data/adapter/error",
+    "export": "InvalidError",
+    "deprecated": false
+  },
+  {
+    "global": "DS.TimeoutError",
+    "module": "@ember-data/adapter/error",
+    "export": "TimeoutError",
+    "deprecated": false
+  },
+  {
+    "global": "DS.AbortError",
+    "module": "@ember-data/adapter/error",
+    "export": "AbortError",
+    "deprecated": false
+  },
+  {
+    "global": "DS.UnauthorizedError",
+    "module": "@ember-data/adapter/error",
+    "export": "UnauthorizedError",
+    "deprecated": false
+  },
+  {
+    "global": "DS.ForbiddenError",
+    "module": "@ember-data/adapter/error",
+    "export": "ForbiddenError",
+    "deprecated": false
+  },
+  {
+    "global": "DS.NotFoundError",
+    "module": "@ember-data/adapter/error",
+    "export": "NotFoundError",
+    "deprecated": false
+  },
+  {
+    "global": "DS.ConflictError",
+    "module": "@ember-data/adapter/error",
+    "export": "ConflictError",
+    "deprecated": false
+  },
+  {
+    "global": "DS.ServerError",
+    "module": "@ember-data/adapter/error",
+    "export": "ServerError",
+    "deprecated": false
+  },
+  {
+    "global": "DS.errorsHashToArray",
+    "module": "@ember-data/adapter/error",
+    "export": "errorsHashToArray",
+    "deprecated": false
+  },
+  {
+    "global": "DS.errorsArrayToHash",
+    "module": "@ember-data/adapter/error",
+    "export": "errorsArrayToHash",
+    "deprecated": false
+  },
+  {
     "global": "DS.Model",
     "module": "ember-data/model",
     "export": "default",
@@ -62,6 +156,136 @@
     "replacement": {
       "module": "@ember-data/Model",
       "export": "hasMany"
+    }
+  },
+  {
+    "global": "DS.Adapter",
+    "module": "ember-data/adapter",
+    "export": "default",
+    "deprecated": true,
+    "replacement": {
+      "module": "@ember-data/adapter",
+      "export": "default"
+    }
+  },
+  {
+    "global": "DS.RESTAdapter",
+    "module": "ember-data/adapters/rest",
+    "export": "default",
+    "deprecated": true,
+    "replacement": {
+      "module": "@ember-data/adapter/rest",
+      "export": "default"
+    }
+  },
+  {
+    "global": "DS.JSONAPIAdapter",
+    "module": "ember-data/adapters/json-api",
+    "export": "default",
+    "deprecated": true,
+    "replacement": {
+      "module": "@ember-data/adapter/json-api",
+      "export": "default"
+    }
+  },
+  {
+    "global": "AdapterError",
+    "module": "ember-data/adapters/errors",
+    "export": "AdapterError",
+    "deprecated": true,
+    "replacement": {
+      "module": "@ember-data/adapter/error",
+      "export": "default"
+    }
+  },
+  {
+    "global": "InvalidError",
+    "module": "ember-data/adapters/errors",
+    "export": "InvalidError",
+    "deprecated": true,
+    "replacement": {
+      "module": "@ember-data/adapter/error",
+      "export": "InvalidError"
+    }
+  },
+  {
+    "global": "TimeoutError",
+    "module": "ember-data/adapters/errors",
+    "export": "TimeoutError",
+    "deprecated": true,
+    "replacement": {
+      "module": "@ember-data/adapter/error",
+      "export": "TimeoutError"
+    }
+  },
+  {
+    "global": "AbortError",
+    "module": "ember-data/adapters/errors",
+    "export": "AbortError",
+    "deprecated": true,
+    "replacement": {
+      "module": "@ember-data/adapter/error",
+      "export": "AbortError"
+    }
+  },
+  {
+    "global": "UnauthorizedError",
+    "module": "ember-data/adapters/errors",
+    "export": "UnauthorizedError",
+    "deprecated": true,
+    "replacement": {
+      "module": "@ember-data/adapter/error",
+      "export": "UnauthorizedError"
+    }
+  },
+  {
+    "global": "ForbiddenError",
+    "module": "ember-data/adapters/errors",
+    "export": "ForbiddenError",
+    "deprecated": true,
+    "replacement": {
+      "module": "@ember-data/adapter/error",
+      "export": "ForbiddenError"
+    }
+  },
+  {
+    "global": "NotFoundError",
+    "module": "ember-data/adapters/errors",
+    "export": "NotFoundError",
+    "deprecated": true,
+    "replacement": {
+      "module": "@ember-data/adapter/error",
+      "export": "NotFoundError"
+    }
+  },
+  {
+    "global": "ConflictError",
+    "module": "ember-data/adapters/errors",
+    "export": "ConflictError",
+    "deprecated": true,
+    "replacement": {
+      "module": "@ember-data/adapter/error",
+      "export": "ConflictError"
+    }
+  },
+  {
+    "global": "ServerError",
+    "module": "ember-data/adapters/errors",
+    "export": "ServerError",
+    "deprecated": true,
+    "replacement": {
+      "module": "@ember-data/adapter/error",
+      "export": "ServerError"
+    }
+  },
+  {
+    "global": "InvalidError",
+    "module": "ember-data/adapters/errors",
+    "export": "InvalidError",
+    "deprecated": true,
+    "replacement": {
+      "module": "@ember-data/adapter/error",
+      "export": "InvalidError"
     }
   }
 ]
