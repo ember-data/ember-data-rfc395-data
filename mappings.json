@@ -411,5 +411,16 @@
       "module": "@ember-data/adapter/error",
       "export": "InvalidError"
     }
+  },
+  {
+    "global": "DS.RecordData",
+    "module": "ember-data/-private",
+    "export": "RecordData",
+    "localName": "Store",
+    "deprecated": true,
+    "replacement": {
+      "module": "@ember-data/record-data",
+      "export": "default"
+    }
   }
 ]
