@@ -25,6 +25,47 @@
     "deprecated": false
   },
   {
+    "global": "DS.Serializer",
+    "module": "@ember-data/serializer",
+    "export": "default",
+    "localName": "Serializer",
+    "deprecated": false
+  },
+  {
+    "global": "DS.JSONSerializer",
+    "module": "@ember-data/serializer/json",
+    "export": "default",
+    "localName": "JSONSerializer",
+    "deprecated": false
+  },
+  {
+    "global": "DS.RESTSerializer",
+    "module": "@ember-data/serializer/rest",
+    "export": "default",
+    "localName": "RESTSerializer",
+    "deprecated": false
+  },
+  {
+    "global": "DS.JSONAPISerializer",
+    "module": "@ember-data/serializer/json-api",
+    "export": "default",
+    "localName": "JSONAPISerializer",
+    "deprecated": false
+  },
+  {
+    "global": "DS.EmbeddedRecordsMixin",
+    "module": "@ember-data/serializer/rest",
+    "export": "EmbeddedRecordsMixin",
+    "deprecated": false
+  },
+  {
+    "global": "DS.Transform",
+    "module": "@ember-data/serializer/transform",
+    "export": "default",
+    "localName": "Transform",
+    "deprecated": false
+  },
+  {
     "global": "DS.Adapter",
     "module": "@ember-data/adapter",
     "export": "default",
@@ -156,6 +197,66 @@
     "replacement": {
       "module": "@ember-data/Model",
       "export": "hasMany"
+    }
+  },
+  {
+    "global": "DS.Serializer",
+    "module": "ember-data/serializer",
+    "export": "default",
+    "deprecated": true,
+    "replacement": {
+      "module": "@ember-data/serializer",
+      "export": "default"
+    }
+  },
+  {
+    "global": "DS.JSONSerializer",
+    "module": "ember-data/serializers/json",
+    "export": "default",
+    "deprecated": true,
+    "replacement": {
+      "module": "@ember-data/serializer/json",
+      "export": "default"
+    }
+  },
+  {
+    "global": "DS.RESTSerializer",
+    "module": "ember-data/serializers/rest",
+    "export": "default",
+    "deprecated": true,
+    "replacement": {
+      "module": "@ember-data/serializer/rest",
+      "export": "default"
+    }
+  },
+  {
+    "global": "DS.JSONAPISerializer",
+    "module": "ember-data/serializers/json-api",
+    "export": "default",
+    "deprecated": true,
+    "replacement": {
+      "module": "@ember-data/serializer/json-api",
+      "export": "default"
+    }
+  },
+  {
+    "global": "DS.EmbeddedRecordsMixin",
+    "module": "ember-data/serializers/embedded-records-mixin",
+    "export": "default",
+    "deprecated": true,
+    "replacement": {
+      "module": "@ember-data/serializer/rest",
+      "export": "EmbeddedRecordsMixin"
+    }
+  },
+  {
+    "global": "DS.Transform",
+    "module": "ember-data/transform",
+    "export": "default",
+    "deprecated": true,
+    "replacement": {
+      "module": "@ember-data/serializer/transform",
+      "export": "default"
     }
   },
   {
