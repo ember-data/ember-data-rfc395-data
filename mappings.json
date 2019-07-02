@@ -316,10 +316,10 @@
   {
     "global": "DS.attr",
     "module": "ember-data/attr",
-    "export": "attr",
+    "export": "default",
     "deprecated": true,
     "replacement": {
-      "module": "@ember-data/Model",
+      "module": "@ember-data/model",
       "export": "attr"
     }
   },
@@ -339,7 +339,7 @@
     "export": "belongsTo",
     "deprecated": true,
     "replacement": {
-      "module": "@ember-data/Model",
+      "module": "@ember-data/model",
       "export": "belongsTo"
     }
   },
@@ -349,7 +349,7 @@
     "export": "hasMany",
     "deprecated": true,
     "replacement": {
-      "module": "@ember-data/Model",
+      "module": "@ember-data/model",
       "export": "hasMany"
     }
   },
