@@ -1,28 +1,154 @@
 [
   {
-    "global": "DS.Model",
-    "module": "@ember-data/model",
+    "global": "DS.RecordData",
+    "module": "ember-data/-private",
+    "export": "RecordData",
+    "localName": "Store",
+    "deprecated": true,
+    "replacement": {
+      "module": "@ember-data/record-data",
+      "export": "default"
+    }
+  },
+  {
+    "global": "DS.Adapter",
+    "module": "ember-data/adapter",
     "export": "default",
-    "localName": "Model",
-    "deprecated": false
+    "deprecated": true,
+    "replacement": {
+      "module": "@ember-data/adapter",
+      "export": "default"
+    }
+  },
+  {
+    "global": "AbortError",
+    "module": "ember-data/adapters/errors",
+    "export": "AbortError",
+    "deprecated": true,
+    "replacement": {
+      "module": "@ember-data/adapter/error",
+      "export": "AbortError"
+    }
+  },
+  {
+    "global": "AdapterError",
+    "module": "ember-data/adapters/errors",
+    "export": "AdapterError",
+    "deprecated": true,
+    "replacement": {
+      "module": "@ember-data/adapter/error",
+      "export": "default"
+    }
+  },
+  {
+    "global": "ConflictError",
+    "module": "ember-data/adapters/errors",
+    "export": "ConflictError",
+    "deprecated": true,
+    "replacement": {
+      "module": "@ember-data/adapter/error",
+      "export": "ConflictError"
+    }
+  },
+  {
+    "global": "ForbiddenError",
+    "module": "ember-data/adapters/errors",
+    "export": "ForbiddenError",
+    "deprecated": true,
+    "replacement": {
+      "module": "@ember-data/adapter/error",
+      "export": "ForbiddenError"
+    }
+  },
+  {
+    "global": "InvalidError",
+    "module": "ember-data/adapters/errors",
+    "export": "InvalidError",
+    "deprecated": true,
+    "replacement": {
+      "module": "@ember-data/adapter/error",
+      "export": "InvalidError"
+    }
+  },
+  {
+    "global": "InvalidError",
+    "module": "ember-data/adapters/errors",
+    "export": "InvalidError",
+    "deprecated": true,
+    "replacement": {
+      "module": "@ember-data/adapter/error",
+      "export": "InvalidError"
+    }
+  },
+  {
+    "global": "NotFoundError",
+    "module": "ember-data/adapters/errors",
+    "export": "NotFoundError",
+    "deprecated": true,
+    "replacement": {
+      "module": "@ember-data/adapter/error",
+      "export": "NotFoundError"
+    }
+  },
+  {
+    "global": "ServerError",
+    "module": "ember-data/adapters/errors",
+    "export": "ServerError",
+    "deprecated": true,
+    "replacement": {
+      "module": "@ember-data/adapter/error",
+      "export": "ServerError"
+    }
+  },
+  {
+    "global": "TimeoutError",
+    "module": "ember-data/adapters/errors",
+    "export": "TimeoutError",
+    "deprecated": true,
+    "replacement": {
+      "module": "@ember-data/adapter/error",
+      "export": "TimeoutError"
+    }
+  },
+  {
+    "global": "UnauthorizedError",
+    "module": "ember-data/adapters/errors",
+    "export": "UnauthorizedError",
+    "deprecated": true,
+    "replacement": {
+      "module": "@ember-data/adapter/error",
+      "export": "UnauthorizedError"
+    }
+  },
+  {
+    "global": "DS.JSONAPIAdapter",
+    "module": "ember-data/adapters/json-api",
+    "export": "default",
+    "deprecated": true,
+    "replacement": {
+      "module": "@ember-data/adapter/json-api",
+      "export": "default"
+    }
+  },
+  {
+    "global": "DS.RESTAdapter",
+    "module": "ember-data/adapters/rest",
+    "export": "default",
+    "deprecated": true,
+    "replacement": {
+      "module": "@ember-data/adapter/rest",
+      "export": "default"
+    }
   },
   {
     "global": "DS.attr",
-    "module": "@ember-data/model",
-    "export": "attr",
-    "deprecated": false
-  },
-  {
-    "global": "DS.belongsTo",
-    "module": "@ember-data/model",
-    "export": "belongsTo",
-    "deprecated": false
-  },
-  {
-    "global": "DS.hasMany",
-    "module": "@ember-data/model",
-    "export": "hasMany",
-    "deprecated": false
+    "module": "ember-data/attr",
+    "export": "default",
+    "deprecated": true,
+    "replacement": {
+      "module": "@ember-data/model",
+      "export": "attr"
+    }
   },
   {
     "global": "DS.Model",
@@ -35,22 +161,12 @@
     }
   },
   {
-    "global": "DS.attr",
-    "module": "ember-data/attr",
-    "export": "attr",
-    "deprecated": true,
-    "replacement": {
-      "module": "@ember-data/Model",
-      "export": "attr"
-    }
-  },
-  {
     "global": "DS.belongsTo",
     "module": "ember-data/relationships",
     "export": "belongsTo",
     "deprecated": true,
     "replacement": {
-      "module": "@ember-data/Model",
+      "module": "@ember-data/model",
       "export": "belongsTo"
     }
   },
@@ -60,8 +176,78 @@
     "export": "hasMany",
     "deprecated": true,
     "replacement": {
-      "module": "@ember-data/Model",
+      "module": "@ember-data/model",
       "export": "hasMany"
+    }
+  },
+  {
+    "global": "DS.Serializer",
+    "module": "ember-data/serializer",
+    "export": "default",
+    "deprecated": true,
+    "replacement": {
+      "module": "@ember-data/serializer",
+      "export": "default"
+    }
+  },
+  {
+    "global": "DS.EmbeddedRecordsMixin",
+    "module": "ember-data/serializers/embedded-records-mixin",
+    "export": "default",
+    "deprecated": true,
+    "replacement": {
+      "module": "@ember-data/serializer/rest",
+      "export": "EmbeddedRecordsMixin"
+    }
+  },
+  {
+    "global": "DS.JSONSerializer",
+    "module": "ember-data/serializers/json",
+    "export": "default",
+    "deprecated": true,
+    "replacement": {
+      "module": "@ember-data/serializer/json",
+      "export": "default"
+    }
+  },
+  {
+    "global": "DS.JSONAPISerializer",
+    "module": "ember-data/serializers/json-api",
+    "export": "default",
+    "deprecated": true,
+    "replacement": {
+      "module": "@ember-data/serializer/json-api",
+      "export": "default"
+    }
+  },
+  {
+    "global": "DS.RESTSerializer",
+    "module": "ember-data/serializers/rest",
+    "export": "default",
+    "deprecated": true,
+    "replacement": {
+      "module": "@ember-data/serializer/rest",
+      "export": "default"
+    }
+  },
+  {
+    "global": "DS.Store",
+    "module": "ember-data/store",
+    "export": "default",
+    "deprecated": true,
+    "replacement": {
+      "module": "@ember-data/store",
+      "export": "default"
+    }
+  },
+  {
+    "global": "DS.Transform",
+    "module": "ember-data/transform",
+    "export": "default",
+    "deprecated": true,
+    "replacement": {
+      "module": "@ember-data/serializer/transform",
+      "export": "default"
     }
   }
 ]

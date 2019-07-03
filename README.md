@@ -13,14 +13,57 @@ JSON data for [RFC #395](https://github.com/emberjs/rfcs/blob/master/text/0395-e
 
 ### Globals to New Modules 
 
-| Before         | After                                            |
-| ---            | ---                                              |
-| `DS.attr`      | `import { attr } from '@ember-data/model';`      |
-| `DS.belongsTo` | `import { belongsTo } from '@ember-data/model';` |
-| `DS.hasMany`   | `import { hasMany } from '@ember-data/model';`   |
-| `DS.Model`     | `import Model from '@ember-data/model';`         |
+| Before                    | After                                                                 |
+| ---                       | ---                                                                   |
+| `DS.AbortError`           | `import { AbortError } from '@ember-data/adapter/error';`             |
+| `DS.Adapter`              | `import Adapter from '@ember-data/adapter';`                          |
+| `DS.AdapterError`         | `import AdapterError from '@ember-data/adapter/error';`               |
+| `DS.attr`                 | `import { attr } from '@ember-data/model';`                           |
+| `DS.belongsTo`            | `import { belongsTo } from '@ember-data/model';`                      |
+| `DS.BuildURLMixin`        | `import { BuildURLMixin } from '@ember-data/adapter';`                |
+| `DS.ConflictError`        | `import { ConflictError } from '@ember-data/adapter/error';`          |
+| `DS.EmbeddedRecordsMixin` | `import { EmbeddedRecordsMixin } from '@ember-data/serializer/rest';` |
+| `DS.errorsArrayToHash`    | `import { errorsArrayToHash } from '@ember-data/adapter/error';`      |
+| `DS.errorsHashToArray`    | `import { errorsHashToArray } from '@ember-data/adapter/error';`      |
+| `DS.ForbiddenError`       | `import { ForbiddenError } from '@ember-data/adapter/error';`         |
+| `DS.hasMany`              | `import { hasMany } from '@ember-data/model';`                        |
+| `DS.InvalidError`         | `import { InvalidError } from '@ember-data/adapter/error';`           |
+| `DS.JSONAPIAdapter`       | `import JSONAPIAdapter from '@ember-data/adapter/json-api';`          |
+| `DS.JSONAPISerializer`    | `import JSONAPISerializer from '@ember-data/serializer/json-api';`    |
+| `DS.JSONSerializer`       | `import JSONSerializer from '@ember-data/serializer/json';`           |
+| `DS.Model`                | `import Model from '@ember-data/model';`                              |
+| `DS.normalizeModelName`   | `import { normalizeModelName } from '@ember-data/store';`             |
+| `DS.NotFoundError`        | `import { NotFoundError } from '@ember-data/adapter/error';`          |
+| `DS.RESTAdapter`          | `import RESTAdapter from '@ember-data/adapter/rest';`                 |
+| `DS.RESTSerializer`       | `import RESTSerializer from '@ember-data/serializer/rest';`           |
+| `DS.Serializer`           | `import Serializer from '@ember-data/serializer';`                    |
+| `DS.ServerError`          | `import { ServerError } from '@ember-data/adapter/error';`            |
+| `DS.Store`                | `import Store from '@ember-data/store';`                              |
+| `DS.TimeoutError`         | `import { TimeoutError } from '@ember-data/adapter/error';`           |
+| `DS.Transform`            | `import Transform from '@ember-data/serializer/transform';`           |
+| `DS.UnauthorizedError`    | `import { UnauthorizedError } from '@ember-data/adapter/error';`      |
+
 
 ### New Modules to Globals
+
+#### `@ember-data/adapter`
+| Module                                                           | Global                 |
+| ---                                                              | ---                    |
+| `import Adapter from '@ember-data/adapter';`                     | `DS.Adapter`           |
+| `import { BuildURLMixin } from '@ember-data/adapter';`           | `DS.BuildURLMixin`     |
+| `import AdapterError from '@ember-data/adapter/error';`          | `DS.AdapterError`      |
+| `import { AbortError } from '@ember-data/adapter/error';`        | `DS.AbortError`        |
+| `import { ConflictError } from '@ember-data/adapter/error';`     | `DS.ConflictError`     |
+| `import { ForbiddenError } from '@ember-data/adapter/error';`    | `DS.ForbiddenError`    |
+| `import { InvalidError } from '@ember-data/adapter/error';`      | `DS.InvalidError`      |
+| `import { NotFoundError } from '@ember-data/adapter/error';`     | `DS.NotFoundError`     |
+| `import { ServerError } from '@ember-data/adapter/error';`       | `DS.ServerError`       |
+| `import { TimeoutError } from '@ember-data/adapter/error';`      | `DS.TimeoutError`      |
+| `import { UnauthorizedError } from '@ember-data/adapter/error';` | `DS.UnauthorizedError` |
+| `import { errorsArrayToHash } from '@ember-data/adapter/error';` | `DS.errorsArrayToHash` |
+| `import { errorsHashToArray } from '@ember-data/adapter/error';` | `DS.errorsHashToArray` |
+| `import JSONAPIAdapter from '@ember-data/adapter/json-api';`     | `DS.JSONAPIAdapter`    |
+| `import RESTAdapter from '@ember-data/adapter/rest';`            | `DS.RESTAdapter`       |
 
 #### `@ember-data/model`
 | Module                                           | Global         |
@@ -29,6 +72,22 @@ JSON data for [RFC #395](https://github.com/emberjs/rfcs/blob/master/text/0395-e
 | `import { attr } from '@ember-data/model';`      | `DS.attr`      |
 | `import { belongsTo } from '@ember-data/model';` | `DS.belongsTo` |
 | `import { hasMany } from '@ember-data/model';`   | `DS.hasMany`   |
+
+#### `@ember-data/serializer`
+| Module                                                                | Global                    |
+| ---                                                                   | ---                       |
+| `import Serializer from '@ember-data/serializer';`                    | `DS.Serializer`           |
+| `import JSONSerializer from '@ember-data/serializer/json';`           | `DS.JSONSerializer`       |
+| `import JSONAPISerializer from '@ember-data/serializer/json-api';`    | `DS.JSONAPISerializer`    |
+| `import RESTSerializer from '@ember-data/serializer/rest';`           | `DS.RESTSerializer`       |
+| `import { EmbeddedRecordsMixin } from '@ember-data/serializer/rest';` | `DS.EmbeddedRecordsMixin` |
+| `import Transform from '@ember-data/serializer/transform';`           | `DS.Transform`            |
+
+#### `@ember-data/store`
+| Module                                                    | Global                  |
+| ---                                                       | ---                     |
+| `import Store from '@ember-data/store';`                  | `DS.Store`              |
+| `import { normalizeModelName } from '@ember-data/store';` | `DS.normalizeModelName` |
 
 
 ### Scripts
