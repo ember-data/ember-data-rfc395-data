@@ -1,6 +1,6 @@
 {
   "name": "@ember-data/rfc395-data",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "JSON data for Ember.js RFC #395",
   "author": "Cyrille David <dcyriller@gmail.com>",
   "files": [
