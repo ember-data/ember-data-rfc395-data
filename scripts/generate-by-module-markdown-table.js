@@ -6,7 +6,7 @@ const { compare, generateImportForMapping } = require('./shared');
 function normalize(mapping) {
   return {
     mapping,
-    group: mapping.module.split('/', 2).join('/'),
+    group: mapping.replacement.module.split('/', 2).join('/'),
   };
 }
 
@@ -42,14 +42,14 @@ function buildTable(result, row) {
 }
 
 function sortByPackageAndExport([, , mappingA], [, , mappingB]) {
-  if (mappingA.module === mappingB.module) {
+  if (mappingA.replacement.module === mappingB.replacement.module) {
     // ensure default exports sort higher within a package
     let aExport = mappingA.export === 'default' ? '' : mappingA.export;
     let bExport = mappingB.export === 'default' ? '' : mappingB.export;
     return compare(aExport || '', bExport || '');
   }
 
-  return compare(mappingA.module, mappingB.module);
+  return compare(mappingA.replacement.module, mappingB.replacement.module);
 }
 
 function printTable(table) {
@@ -85,7 +85,6 @@ function print() {
 }
 
 let table = mappings
-  .filter(mapping => !mapping.deprecated)
   .map(normalize)
   .sort(sortByGroup)
   .reduce(buildTable, {});

@@ -1,7 +1,7 @@
 'use strict';
 
 function sortByModule(a, b) {
-  return compare(a.module, b.module);
+  return compare(a.replacement.module, b.replacement.module);
 }
 
 function compare(a, b) {
@@ -9,14 +9,12 @@ function compare(a, b) {
 }
 
 function generateImportForMapping(mapping) {
-  let afterPackage = mapping.module;
-  let afterExportName = mapping.export;
+  let afterPackage = mapping.replacement.module;
+  let afterExportName = mapping.replacement.export;
   let afterIdentifier = mapping.localName || mapping.export;
 
   if (afterExportName === 'default') {
     return `import ${afterIdentifier} from '${afterPackage}';`;
-  } else if (afterExportName !== afterIdentifier) {
-    return `import { ${afterExportName} as ${afterIdentifier} } from '${afterPackage}';`;
   } else {
     return `import { ${afterExportName} } from '${afterPackage}';`;
   }
