@@ -9,7 +9,7 @@ module.exports = {
     node: true,
   },
   rules: {
-    'prettier/prettier': ['error', { singleQuote: true, trailingComma: 'es5' }],
+    'prettier/prettier': ['error'],
   },
   overrides: [
     {
