@@ -4,7 +4,6 @@
     "module": "ember-data/-private",
     "export": "default",
     "localName": "RecordData",
-    "deprecated": true,
     "replacement": {
       "module": "@ember-data/record-data",
       "export": "default"
@@ -15,7 +14,6 @@
     "module": "ember-data/adapter",
     "export": "default",
     "localName": "Adapter",
-    "deprecated": true,
     "replacement": {
       "module": "@ember-data/adapter",
       "export": "default"
@@ -25,7 +23,6 @@
     "global": "DS.BuildURLMixin",
     "module": "ember-data/adapter",
     "export": "BuildURLMixin",
-    "deprecated": true,
     "replacement": {
       "module": "@ember-data/adapter",
       "export": "BuildURLMixin"
@@ -35,7 +32,6 @@
     "global": "DS.errorsArrayToHash",
     "module": "ember-data/adapters/errors",
     "export": "errorsArrayToHash",
-    "deprecated": true,
     "replacement": {
       "module": "@ember-data/adapter/error",
       "export": "errorsArrayToHash"
@@ -45,7 +41,6 @@
     "global": "DS.errorsHashToArray",
     "module": "ember-data/adapters/errors",
     "export": "errorsHashToArray",
-    "deprecated": true,
     "replacement": {
       "module": "@ember-data/adapter/error",
       "export": "errorsHashToArray"
@@ -55,7 +50,6 @@
     "global": "DS.AbortError",
     "module": "ember-data/adapters/errors",
     "export": "AbortError",
-    "deprecated": true,
     "replacement": {
       "module": "@ember-data/adapter/error",
       "export": "AbortError"
@@ -65,7 +59,6 @@
     "global": "DS.AdapterError",
     "module": "ember-data/adapters/errors",
     "export": "AdapterError",
-    "deprecated": true,
     "replacement": {
       "module": "@ember-data/adapter/error",
       "export": "default"
@@ -75,7 +68,6 @@
     "global": "DS.ConflictError",
     "module": "ember-data/adapters/errors",
     "export": "ConflictError",
-    "deprecated": true,
     "replacement": {
       "module": "@ember-data/adapter/error",
       "export": "ConflictError"
@@ -85,7 +77,6 @@
     "global": "DS.ForbiddenError",
     "module": "ember-data/adapters/errors",
     "export": "ForbiddenError",
-    "deprecated": true,
     "replacement": {
       "module": "@ember-data/adapter/error",
       "export": "ForbiddenError"
@@ -95,7 +86,6 @@
     "global": "DS.InvalidError",
     "module": "ember-data/adapters/errors",
     "export": "InvalidError",
-    "deprecated": true,
     "replacement": {
       "module": "@ember-data/adapter/error",
       "export": "InvalidError"
@@ -105,7 +95,6 @@
     "global": "DS.NotFoundError",
     "module": "ember-data/adapters/errors",
     "export": "NotFoundError",
-    "deprecated": true,
     "replacement": {
       "module": "@ember-data/adapter/error",
       "export": "NotFoundError"
@@ -115,7 +104,6 @@
     "global": "DS.ServerError",
     "module": "ember-data/adapters/errors",
     "export": "ServerError",
-    "deprecated": true,
     "replacement": {
       "module": "@ember-data/adapter/error",
       "export": "ServerError"
@@ -125,7 +113,6 @@
     "global": "DS.TimeoutError",
     "module": "ember-data/adapters/errors",
     "export": "TimeoutError",
-    "deprecated": true,
     "replacement": {
       "module": "@ember-data/adapter/error",
       "export": "TimeoutError"
@@ -135,7 +122,6 @@
     "global": "DS.UnauthorizedError",
     "module": "ember-data/adapters/errors",
     "export": "UnauthorizedError",
-    "deprecated": true,
     "replacement": {
       "module": "@ember-data/adapter/error",
       "export": "UnauthorizedError"
@@ -146,7 +132,6 @@
     "module": "ember-data/adapters/json-api",
     "export": "default",
     "localName": "JSONAPIAdapter",
-    "deprecated": true,
     "replacement": {
       "module": "@ember-data/adapter/json-api",
       "export": "default"
@@ -157,7 +142,6 @@
     "module": "ember-data/adapters/rest",
     "export": "default",
     "localName": "RESTAdapter",
-    "deprecated": true,
     "replacement": {
       "module": "@ember-data/adapter/rest",
       "export": "default"
@@ -167,7 +151,6 @@
     "global": "DS.attr",
     "module": "ember-data/attr",
     "export": "default",
-    "deprecated": true,
     "replacement": {
       "module": "@ember-data/model",
       "export": "attr"
@@ -178,7 +161,6 @@
     "module": "ember-data/model",
     "export": "default",
     "localName": "Model",
-    "deprecated": true,
     "replacement": {
       "module": "@ember-data/model",
       "export": "default"
@@ -188,7 +170,6 @@
     "global": "DS.belongsTo",
     "module": "ember-data/relationships",
     "export": "belongsTo",
-    "deprecated": true,
     "replacement": {
       "module": "@ember-data/model",
       "export": "belongsTo"
@@ -198,7 +179,6 @@
     "global": "DS.hasMany",
     "module": "ember-data/relationships",
     "export": "hasMany",
-    "deprecated": true,
     "replacement": {
       "module": "@ember-data/model",
       "export": "hasMany"
@@ -209,7 +189,6 @@
     "module": "ember-data/serializer",
     "export": "default",
     "localName": "Serializer",
-    "deprecated": true,
     "replacement": {
       "module": "@ember-data/serializer",
       "export": "default"
@@ -219,7 +198,6 @@
     "global": "DS.EmbeddedRecordsMixin",
     "module": "ember-data/serializers/embedded-records-mixin",
     "export": "default",
-    "deprecated": true,
     "replacement": {
       "module": "@ember-data/serializer/rest",
       "export": "EmbeddedRecordsMixin"
@@ -230,7 +208,6 @@
     "module": "ember-data/serializers/json",
     "export": "default",
     "localName": "JSONSerializer",
-    "deprecated": true,
     "replacement": {
       "module": "@ember-data/serializer/json",
       "export": "default"
@@ -241,7 +218,6 @@
     "module": "ember-data/serializers/json-api",
     "export": "default",
     "localName": "JSONAPISerializer",
-    "deprecated": true,
     "replacement": {
       "module": "@ember-data/serializer/json-api",
       "export": "default"
@@ -252,7 +228,6 @@
     "module": "ember-data/serializers/rest",
     "export": "default",
     "localName": "RESTSerializer",
-    "deprecated": true,
     "replacement": {
       "module": "@ember-data/serializer/rest",
       "export": "default"
@@ -263,7 +238,6 @@
     "module": "ember-data/store",
     "export": "default",
     "localName": "Store",
-    "deprecated": true,
     "replacement": {
       "module": "@ember-data/store",
       "export": "default"
@@ -273,7 +247,6 @@
     "global": "DS.normalizeModelName",
     "module": "ember-data/store",
     "export": "normalizeModelName",
-    "deprecated": true,
     "replacement": {
       "module": "@ember-data/store",
       "export": "normalizeModelName"
@@ -284,7 +257,6 @@
     "module": "ember-data/transform",
     "export": "default",
     "localName": "Transform",
-    "deprecated": true,
     "replacement": {
       "module": "@ember-data/serializer/transform",
       "export": "default"

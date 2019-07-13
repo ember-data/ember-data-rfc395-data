@@ -28,7 +28,6 @@ let updated = mappings.sort(sortByModuleAndExport).map(mapping => {
     module: mapping.module,
     export: mapping.export,
     localName,
-    deprecated: !!mapping.deprecated,
     replacement: mapping.replacement,
   };
 
