@@ -1,182 +1,9 @@
 [
   {
-    "global": "DS.Adapter",
-    "module": "@ember-data/adapter",
-    "export": "default",
-    "localName": "Adapter",
-    "deprecated": false
-  },
-  {
-    "global": "DS.BuildURLMixin",
-    "module": "@ember-data/adapter",
-    "export": "BuildURLMixin",
-    "deprecated": false
-  },
-  {
-    "global": "DS.AdapterError",
-    "module": "@ember-data/adapter/error",
-    "export": "default",
-    "localName": "AdapterError",
-    "deprecated": false
-  },
-  {
-    "global": "DS.AbortError",
-    "module": "@ember-data/adapter/error",
-    "export": "AbortError",
-    "deprecated": false
-  },
-  {
-    "global": "DS.ConflictError",
-    "module": "@ember-data/adapter/error",
-    "export": "ConflictError",
-    "deprecated": false
-  },
-  {
-    "global": "DS.ForbiddenError",
-    "module": "@ember-data/adapter/error",
-    "export": "ForbiddenError",
-    "deprecated": false
-  },
-  {
-    "global": "DS.InvalidError",
-    "module": "@ember-data/adapter/error",
-    "export": "InvalidError",
-    "deprecated": false
-  },
-  {
-    "global": "DS.NotFoundError",
-    "module": "@ember-data/adapter/error",
-    "export": "NotFoundError",
-    "deprecated": false
-  },
-  {
-    "global": "DS.ServerError",
-    "module": "@ember-data/adapter/error",
-    "export": "ServerError",
-    "deprecated": false
-  },
-  {
-    "global": "DS.TimeoutError",
-    "module": "@ember-data/adapter/error",
-    "export": "TimeoutError",
-    "deprecated": false
-  },
-  {
-    "global": "DS.UnauthorizedError",
-    "module": "@ember-data/adapter/error",
-    "export": "UnauthorizedError",
-    "deprecated": false
-  },
-  {
-    "global": "DS.errorsArrayToHash",
-    "module": "@ember-data/adapter/error",
-    "export": "errorsArrayToHash",
-    "deprecated": false
-  },
-  {
-    "global": "DS.errorsHashToArray",
-    "module": "@ember-data/adapter/error",
-    "export": "errorsHashToArray",
-    "deprecated": false
-  },
-  {
-    "global": "DS.JSONAPIAdapter",
-    "module": "@ember-data/adapter/json-api",
-    "export": "default",
-    "localName": "JSONAPIAdapter",
-    "deprecated": false
-  },
-  {
-    "global": "DS.RESTAdapter",
-    "module": "@ember-data/adapter/rest",
-    "export": "default",
-    "localName": "RESTAdapter",
-    "deprecated": false
-  },
-  {
-    "global": "DS.Model",
-    "module": "@ember-data/model",
-    "export": "default",
-    "localName": "Model",
-    "deprecated": false
-  },
-  {
-    "global": "DS.attr",
-    "module": "@ember-data/model",
-    "export": "attr",
-    "deprecated": false
-  },
-  {
-    "global": "DS.belongsTo",
-    "module": "@ember-data/model",
-    "export": "belongsTo",
-    "deprecated": false
-  },
-  {
-    "global": "DS.hasMany",
-    "module": "@ember-data/model",
-    "export": "hasMany",
-    "deprecated": false
-  },
-  {
-    "global": "DS.Serializer",
-    "module": "@ember-data/serializer",
-    "export": "default",
-    "localName": "Serializer",
-    "deprecated": false
-  },
-  {
-    "global": "DS.JSONSerializer",
-    "module": "@ember-data/serializer/json",
-    "export": "default",
-    "localName": "JSONSerializer",
-    "deprecated": false
-  },
-  {
-    "global": "DS.JSONAPISerializer",
-    "module": "@ember-data/serializer/json-api",
-    "export": "default",
-    "localName": "JSONAPISerializer",
-    "deprecated": false
-  },
-  {
-    "global": "DS.RESTSerializer",
-    "module": "@ember-data/serializer/rest",
-    "export": "default",
-    "localName": "RESTSerializer",
-    "deprecated": false
-  },
-  {
-    "global": "DS.EmbeddedRecordsMixin",
-    "module": "@ember-data/serializer/rest",
-    "export": "EmbeddedRecordsMixin",
-    "deprecated": false
-  },
-  {
-    "global": "DS.Transform",
-    "module": "@ember-data/serializer/transform",
-    "export": "default",
-    "localName": "Transform",
-    "deprecated": false
-  },
-  {
-    "global": "DS.Store",
-    "module": "@ember-data/store",
-    "export": "default",
-    "localName": "Store",
-    "deprecated": false
-  },
-  {
-    "global": "DS.normalizeModelName",
-    "module": "@ember-data/store",
-    "export": "normalizeModelName",
-    "deprecated": false
-  },
-  {
     "global": "DS.RecordData",
     "module": "ember-data/-private",
-    "export": "RecordData",
-    "localName": "Store",
+    "export": "default",
+    "localName": "RecordData",
     "deprecated": true,
     "replacement": {
       "module": "@ember-data/record-data",
@@ -187,10 +14,41 @@
     "global": "DS.Adapter",
     "module": "ember-data/adapter",
     "export": "default",
+    "localName": "Adapter",
     "deprecated": true,
     "replacement": {
       "module": "@ember-data/adapter",
       "export": "default"
+    }
+  },
+  {
+    "global": "DS.BuildURLMixin",
+    "module": "ember-data/adapter",
+    "export": "BuildURLMixin",
+    "deprecated": true,
+    "replacement": {
+      "module": "@ember-data/adapter",
+      "export": "BuildURLMixin"
+    }
+  },
+  {
+    "global": "DS.errorsArrayToHash",
+    "module": "ember-data/adapters/errors",
+    "export": "errorsArrayToHash",
+    "deprecated": true,
+    "replacement": {
+      "module": "@ember-data/adapter/error",
+      "export": "errorsArrayToHash"
+    }
+  },
+  {
+    "global": "DS.errorsHashToArray",
+    "module": "ember-data/adapters/errors",
+    "export": "errorsHashToArray",
+    "deprecated": true,
+    "replacement": {
+      "module": "@ember-data/adapter/error",
+      "export": "errorsHashToArray"
     }
   },
   {
@@ -409,6 +267,16 @@
     "replacement": {
       "module": "@ember-data/store",
       "export": "default"
+    }
+  },
+  {
+    "global": "DS.normalizeModelName",
+    "module": "ember-data/store",
+    "export": "normalizeModelName",
+    "deprecated": true,
+    "replacement": {
+      "module": "@ember-data/store",
+      "export": "normalizeModelName"
     }
   },
   {
