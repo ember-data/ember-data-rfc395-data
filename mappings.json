@@ -194,7 +194,7 @@
     }
   },
   {
-    "global": "AbortError",
+    "global": "DS.AbortError",
     "module": "ember-data/adapters/errors",
     "export": "AbortError",
     "deprecated": true,
@@ -204,7 +204,7 @@
     }
   },
   {
-    "global": "AdapterError",
+    "global": "DS.AdapterError",
     "module": "ember-data/adapters/errors",
     "export": "AdapterError",
     "deprecated": true,
@@ -214,7 +214,7 @@
     }
   },
   {
-    "global": "ConflictError",
+    "global": "DS.ConflictError",
     "module": "ember-data/adapters/errors",
     "export": "ConflictError",
     "deprecated": true,
@@ -224,7 +224,7 @@
     }
   },
   {
-    "global": "ForbiddenError",
+    "global": "DS.ForbiddenError",
     "module": "ember-data/adapters/errors",
     "export": "ForbiddenError",
     "deprecated": true,
@@ -234,7 +234,7 @@
     }
   },
   {
-    "global": "InvalidError",
+    "global": "DS.InvalidError",
     "module": "ember-data/adapters/errors",
     "export": "InvalidError",
     "deprecated": true,
@@ -244,17 +244,7 @@
     }
   },
   {
-    "global": "InvalidError",
-    "module": "ember-data/adapters/errors",
-    "export": "InvalidError",
-    "deprecated": true,
-    "replacement": {
-      "module": "@ember-data/adapter/error",
-      "export": "InvalidError"
-    }
-  },
-  {
-    "global": "NotFoundError",
+    "global": "DS.NotFoundError",
     "module": "ember-data/adapters/errors",
     "export": "NotFoundError",
     "deprecated": true,
@@ -264,7 +254,7 @@
     }
   },
   {
-    "global": "ServerError",
+    "global": "DS.ServerError",
     "module": "ember-data/adapters/errors",
     "export": "ServerError",
     "deprecated": true,
@@ -274,7 +264,7 @@
     }
   },
   {
-    "global": "TimeoutError",
+    "global": "DS.TimeoutError",
     "module": "ember-data/adapters/errors",
     "export": "TimeoutError",
     "deprecated": true,
@@ -284,7 +274,7 @@
     }
   },
   {
-    "global": "UnauthorizedError",
+    "global": "DS.UnauthorizedError",
     "module": "ember-data/adapters/errors",
     "export": "UnauthorizedError",
     "deprecated": true,
@@ -297,6 +287,7 @@
     "global": "DS.JSONAPIAdapter",
     "module": "ember-data/adapters/json-api",
     "export": "default",
+    "localName": "JSONAPIAdapter",
     "deprecated": true,
     "replacement": {
       "module": "@ember-data/adapter/json-api",
@@ -307,6 +298,7 @@
     "global": "DS.RESTAdapter",
     "module": "ember-data/adapters/rest",
     "export": "default",
+    "localName": "RESTAdapter",
     "deprecated": true,
     "replacement": {
       "module": "@ember-data/adapter/rest",
@@ -327,6 +319,7 @@
     "global": "DS.Model",
     "module": "ember-data/model",
     "export": "default",
+    "localName": "Model",
     "deprecated": true,
     "replacement": {
       "module": "@ember-data/model",
@@ -357,6 +350,7 @@
     "global": "DS.Serializer",
     "module": "ember-data/serializer",
     "export": "default",
+    "localName": "Serializer",
     "deprecated": true,
     "replacement": {
       "module": "@ember-data/serializer",
@@ -377,6 +371,7 @@
     "global": "DS.JSONSerializer",
     "module": "ember-data/serializers/json",
     "export": "default",
+    "localName": "JSONSerializer",
     "deprecated": true,
     "replacement": {
       "module": "@ember-data/serializer/json",
@@ -387,6 +382,7 @@
     "global": "DS.JSONAPISerializer",
     "module": "ember-data/serializers/json-api",
     "export": "default",
+    "localName": "JSONAPISerializer",
     "deprecated": true,
     "replacement": {
       "module": "@ember-data/serializer/json-api",
@@ -397,6 +393,7 @@
     "global": "DS.RESTSerializer",
     "module": "ember-data/serializers/rest",
     "export": "default",
+    "localName": "RESTSerializer",
     "deprecated": true,
     "replacement": {
       "module": "@ember-data/serializer/rest",
@@ -407,6 +404,7 @@
     "global": "DS.Store",
     "module": "ember-data/store",
     "export": "default",
+    "localName": "Store",
     "deprecated": true,
     "replacement": {
       "module": "@ember-data/store",
@@ -417,6 +415,7 @@
     "global": "DS.Transform",
     "module": "ember-data/transform",
     "export": "default",
+    "localName": "Transform",
     "deprecated": true,
     "replacement": {
       "module": "@ember-data/serializer/transform",
