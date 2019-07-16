@@ -34,6 +34,7 @@ JSON data for [RFC #395](https://github.com/emberjs/rfcs/blob/master/text/0395-e
 | `DS.Model`                | `import Model from '@ember-data/model';`                              |
 | `DS.normalizeModelName`   | `import { normalizeModelName } from '@ember-data/store';`             |
 | `DS.NotFoundError`        | `import { NotFoundError } from '@ember-data/adapter/error';`          |
+| `DS.RecordData`           | `import RecordData from '@ember-data/record-data';`                   |
 | `DS.RESTAdapter`          | `import RESTAdapter from '@ember-data/adapter/rest';`                 |
 | `DS.RESTSerializer`       | `import RESTSerializer from '@ember-data/serializer/rest';`           |
 | `DS.Serializer`           | `import Serializer from '@ember-data/serializer';`                    |
@@ -51,8 +52,8 @@ JSON data for [RFC #395](https://github.com/emberjs/rfcs/blob/master/text/0395-e
 | ---                                                              | ---                    |
 | `import Adapter from '@ember-data/adapter';`                     | `DS.Adapter`           |
 | `import { BuildURLMixin } from '@ember-data/adapter';`           | `DS.BuildURLMixin`     |
-| `import AdapterError from '@ember-data/adapter/error';`          | `DS.AdapterError`      |
 | `import { AbortError } from '@ember-data/adapter/error';`        | `DS.AbortError`        |
+| `import AdapterError from '@ember-data/adapter/error';`          | `DS.AdapterError`      |
 | `import { ConflictError } from '@ember-data/adapter/error';`     | `DS.ConflictError`     |
 | `import { ForbiddenError } from '@ember-data/adapter/error';`    | `DS.ForbiddenError`    |
 | `import { InvalidError } from '@ember-data/adapter/error';`      | `DS.InvalidError`      |
@@ -68,10 +69,15 @@ JSON data for [RFC #395](https://github.com/emberjs/rfcs/blob/master/text/0395-e
 #### `@ember-data/model`
 | Module                                           | Global         |
 | ---                                              | ---            |
-| `import Model from '@ember-data/model';`         | `DS.Model`     |
 | `import { attr } from '@ember-data/model';`      | `DS.attr`      |
+| `import Model from '@ember-data/model';`         | `DS.Model`     |
 | `import { belongsTo } from '@ember-data/model';` | `DS.belongsTo` |
 | `import { hasMany } from '@ember-data/model';`   | `DS.hasMany`   |
+
+#### `@ember-data/record-data`
+| Module                                              | Global          |
+| ---                                                 | ---             |
+| `import RecordData from '@ember-data/record-data';` | `DS.RecordData` |
 
 #### `@ember-data/serializer`
 | Module                                                                | Global                    |
@@ -79,8 +85,8 @@ JSON data for [RFC #395](https://github.com/emberjs/rfcs/blob/master/text/0395-e
 | `import Serializer from '@ember-data/serializer';`                    | `DS.Serializer`           |
 | `import JSONSerializer from '@ember-data/serializer/json';`           | `DS.JSONSerializer`       |
 | `import JSONAPISerializer from '@ember-data/serializer/json-api';`    | `DS.JSONAPISerializer`    |
-| `import RESTSerializer from '@ember-data/serializer/rest';`           | `DS.RESTSerializer`       |
 | `import { EmbeddedRecordsMixin } from '@ember-data/serializer/rest';` | `DS.EmbeddedRecordsMixin` |
+| `import RESTSerializer from '@ember-data/serializer/rest';`           | `DS.RESTSerializer`       |
 | `import Transform from '@ember-data/serializer/transform';`           | `DS.Transform`            |
 
 #### `@ember-data/store`
@@ -123,22 +129,16 @@ interface Mapping {
   export: string;
 
   /**
-    `true` if this module / export combination has been deprecated.
-   */
-  deprecated: boolean;
-
-  /**
     The recommended `localName` to use for a given module/export. Only present
     when a name other than the value for `export` should be used.
 
-    This is useful for things like ember-modules-codemod or eslint-plugin-ember
+    This is useful for things like ember-data-codemod or eslint-plugin-ember
     so that they can provide a nice suggested import for a given global path usage.
    */
   localName?: string;
 
   /**
-    When this mapping is deprecated it may include a replacement module/export which
-    should be used instead.
+    A replacement module/export which should be used instead.
   */
   replacement?: {
     module: string;
