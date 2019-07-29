@@ -151,6 +151,7 @@
     "global": "DS.attr",
     "module": "ember-data/attr",
     "export": "default",
+    "localName": "attr",
     "replacement": {
       "module": "@ember-data/model",
       "export": "attr"
